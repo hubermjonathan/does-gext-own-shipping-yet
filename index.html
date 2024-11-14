@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title id="value">Does GEXT Own Shipping Yet?</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Does GEXT Own Shipping Yet?">
+    <meta name="author" content="Jon Huber">
+
+    <!-- css -->
+    <style>
+        html, body {
+            background-color: #000;
+            padding-top: 8%;
+            font-family: sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            opacity: 0.87;
+        }
+
+        @media (min-width: 768px) {
+        h1 {
+            font-size: 4rem;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="value">Does GEXT Own Shipping Yet?</h1>
+
+    <script defer>
+        let currentDate = new Date();
+        let currentYear = currentDate.getFullYear();
+        let shippingTransferYear = 2025;
+        let valueText = currentYear >= shippingTransferYear ? "yes :)" : "no :(";
+
+        document.querySelectorAll("[id='value']").forEach(element => {
+            element.innerHTML = valueText;
+        });
+    </script>
+</body>
+
+</html>
